@@ -1,5 +1,9 @@
 function shelfBook(bookName, shelf) {
-  shelf.unshift(bookName)
+  if(shelf.length <= 2){
+    shelf.unshift(bookName)
+  }
+  return shelf
+
 }
 module.exports = {
    shelfBook,
