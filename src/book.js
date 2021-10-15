@@ -40,9 +40,9 @@ function writeBook(bookTitle, bookCharacter, bookType) {
   }
   console.log(bookObject);
   return bookObject
-
-
-
+}
+function editBook() {
+  
 }
 
 module.exports = {
@@ -50,6 +50,6 @@ module.exports = {
   buildMainCharacter,
   saveReview,
   calculatePageCount,
-   writeBook,
-  // editBook
+  writeBook,
+  editBook
 }
