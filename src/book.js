@@ -12,8 +12,21 @@ function buildMainCharacter(name, age,pronouns) {
 }
 
 function saveReview(criticReviews,reviews) {
-  reviews.push(criticReviews);
-  console.log(reviews.length);
+    if(reviews.length === 0){
+      reviews.push(criticReviews);
+    } else {
+      for(var i = 0; i < reviews.length; i++) {
+        if(reviews[i] != criticReviews){
+          reviews.push(criticReviews)
+          return reviews
+        } else {
+          return reviews;
+        }
+  }
+    }
+  
+  
+  
 }
 
 
