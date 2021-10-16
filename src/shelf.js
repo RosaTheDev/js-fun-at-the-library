@@ -14,8 +14,12 @@ function unshelfBook(bookName, shelfName) {
   } 
 } 
 
-function listTitles() {
-  
+function listTitles(shelfName) {
+  var newArray = [];
+  for(var i = 0; i < shelfName.length; i++) {
+    newArray.push(shelfName[i].title)
+  }
+  return newArray.join(', ')
 }
 module.exports = {
   shelfBook,
