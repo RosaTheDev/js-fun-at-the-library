@@ -21,9 +21,17 @@ function listTitles(shelfName) {
   }
   return newArray.join(', ')
 }
+
+function searchShelf(bookTitleArray, bookTitleString){
+  if() {
+    return true
+  } else {
+    return false
+  }
+}
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
